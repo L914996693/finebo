@@ -16,4 +16,9 @@ public class Paycontroller {
     public String getPayment(){//@RequestParam("id") Integer id +id
         return "nacos registry,serverPort: "+serverport+"\t id:9001";
     }
+
+    @GetMapping(value = "paycount")
+    public String paycount(){
+        return "1";
+    }
 }
