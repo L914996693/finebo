@@ -13,6 +13,7 @@ spring:
       config:
         server-addr: 127.0.0.1:8848 #Nacos作为配置中心地址
         file-extension: yaml #指定yaml格式配置
-        namespace: 367b2dba-68a0-4914-89cb-5d1dd0c64c3a
+        namespace: 22c0a94a-c13c-4ae2-abe1-25c710a3aa2b
         group: TEST_GROUP
 #${spring.application.name}-${spring.profile.active}-${spring.cloud.nacos.config.file-exension}
+#nacos-config-client-test.yaml

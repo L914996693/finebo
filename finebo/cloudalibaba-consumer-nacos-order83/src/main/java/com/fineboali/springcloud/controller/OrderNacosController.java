@@ -23,9 +23,10 @@ public class OrderNacosController {
     private String serverURL;
 
     @GetMapping(value = "ordernacos")
-    public String paymentInfo(){//@RequestParam("id") Integer id
-        System.out.println(serverURL+"/payment/nacos");
-        return restTemplate.getForObject(serverURL+"/payment/nacos",String.class);//?id="+id
+    public String paymentInfo() {//@RequestParam("id") Integer id
+        //System.out.println(serverURL+"/payment/nacos");
+        return restTemplate.getForObject(serverURL + "/payment/nacos", String.class);//?id="+id
     }
+
 
 }
