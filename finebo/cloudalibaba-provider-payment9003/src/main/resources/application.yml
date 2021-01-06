@@ -1,0 +1,22 @@
+server:
+  port: 9003
+
+spring:
+  application:
+    name: nacos-payment-provider
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@//127.0.0.1:1521/ORCL
+    username: angualrdatabase
+    password: angular
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
